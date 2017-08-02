@@ -1,0 +1,69 @@
+/* Calculator CSS
+ *
+ * https://coolors.co/ebe9e9-f3f8f2-3581b8-fcb07e-dee2d6
+ */
+
+body {
+  margin-top: 60px;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+#calculator {
+  background-color: #EBE9E9;
+  border-top: 4px solid #EBE9E9;
+  border-right: 4px solid #D6D4D4;
+  border-bottom: 4px solid #D6D4D4;
+  border-left: 4px solid #EBE9E9;
+  border-radius: 4px;
+}
+
+#calculator-input {
+  width: 100%;
+  border: 4px solid #FCB07E;
+  border-radius: 4px;
+  text-align: right;
+  margin: 10px 0px 20px 0px;
+}
+
+#footer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.calculator-button {
+  display: block;
+  width: 100%;
+  color: #F3F8F2;
+  font-size: 16px;
+  text-align: center;
+  background-color: #3581B8;
+  border-top: 4px solid #3581B8;
+  border-right: 4px solid #2C6A97;
+  border-bottom: 4px solid #2C6A97;
+  border-left: 4px solid #3581B8;
+  border-radius: 4px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.calculator-button:active {
+  border-top: 4px solid #2C6A97;
+  border-right: 4px solid #3581B8;
+  border-bottom: 4px solid #3581B8;
+  border-left: 4px solid #2C6A97;
+}
+
+.calculator-button-danger {
+  background-color: #B8815C;
+  border-top: 4px solid #B8815C;
+  border-right: 4px solid #8A6045;
+  border-bottom: 4px solid #8A6045;
+  border-left: 4px solid #B8815C;
+}
+
+.calculator-button-danger:active {
+  border-top: 4px solid #8A6045;
+  border-right: 4px solid #B8815C;
+  border-bottom: 4px solid #B8815C;
+  border-left: 4px solid #8A6045;
+}

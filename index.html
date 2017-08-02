@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Calculator</title>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech+Mono" rel="stylesheet">
+  <link rel="stylesheet" href="css/application.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div id="calculator" class="col-xs-12 col-sm-8 col-md-6 col-lg-4 col-sm-offset-2 col-md-offset-3 col-lg-offset-4">
+        <!-- header -->
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h1>Neato Calculator</h1>
+          </div>
+        </div>
+
+        <!-- input section -->
+        <div class="row">
+          <div class="col-xs-12">
+            <input id="calculator-input" type="text" placeholder="Enter an expression...">
+          </div>
+        </div>
+
+        <!-- first button row -->
+        <div class="row">
+          <div class="col-xs-3">
+            <button id="btn-clear" type="button" class="calculator-button calculator-button-danger">AC</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-lparen" type="button" class="calculator-button">(</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-rparen" type="button" class="calculator-button">)</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-divide" type="button" class="calculator-button">&divide;</button>
+          </div>
+        </div>
+
+        <!-- second button row -->
+        <div class="row">
+          <div class="col-xs-3">
+            <button id="btn-7" type="button" class="calculator-button">7</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-8" type="button" class="calculator-button">8</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-9" type="button" class="calculator-button">9</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-multiply" type="button" class="calculator-button">x</button>
+          </div>
+        </div>
+
+        <!-- third button row -->
+        <div class="row">
+          <div class="col-xs-3">
+            <button id="btn-4" type="button" class="calculator-button">4</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-5" type="button" class="calculator-button">5</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-6" type="button" class="calculator-button">6</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-minus" type="button" class="calculator-button">-</button>
+          </div>
+        </div>
+
+        <!-- fourth button row -->
+        <div class="row">
+          <div class="col-xs-3">
+            <button id="btn-1" type="button" class="calculator-button">1</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-2" type="button" class="calculator-button">2</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-3" type="button" class="calculator-button">3</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-minus" type="button" class="calculator-button">+</button>
+          </div>
+        </div>
+
+        <!-- fourth button row -->
+        <div class="row">
+          <div class="col-xs-3">
+            <button id="btn-0" type="button" class="calculator-button">0</button>
+          </div>
+          <div class="col-xs-3">
+            <button id="btn-point" type="button" class="calculator-button">.</button>
+          </div>
+          <div class="col-xs-6">
+            <button id="btn-equals" type="button" class="calculator-button">=</button>
+          </div>
+        </div>
+
+        <div id="footer" class="row">
+          <div class="col-xs-6">
+            <a href="#"><i class="fa fa-github"></i></a>
+          </div>
+          <div class="col-xs-6 text-right">
+            Powered by <a href="http://mathjs.org/">Math.js</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/mathjs/3.15.0/math.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
