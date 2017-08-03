@@ -59,7 +59,8 @@ function onEvaluateExpression() {
     var answer = limitedMathEval(expr);
     $("#calculator-input").val(answer);
   } catch (e) {
-    $("#calculator-input").val("").attr("placeholder", "ERROR: " + e.message);
+    console.log("Expression eval [" + expr + "] error: " + e.message);
+    $("#calculator-input").val("").attr("placeholder", "ERROR");
   }
 }
 
